@@ -1,0 +1,29 @@
+{
+  "name": "tp2-fts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martochab/TP2-FTS.git"
+  },
+  "author": "Martin Chab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martochab/TP2-FTS/issues"
+  },
+  "homepage": "https://github.com/martochab/TP2-FTS#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.3.1",
+    "sequelize": "^6.31.1"
+  }
+}
