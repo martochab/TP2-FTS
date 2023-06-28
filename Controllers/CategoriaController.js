@@ -23,8 +23,8 @@ class CategoriaCotroller {
 
     crearCategoria = async (req, res) => {
       try {
-        const {nombre, foto, latitud,longitud,cbu,idcategoria} = req.body;
-        const result = await Categoria.create({nombre,foto,latitud,longitud,cbu,idcategoria});
+        const {nombre} = req.body;
+        const result = await Categoria.create({nombre});
         if (!result) throw new Error("No se pudo crear la categoria");
         res.status(200).send({
           success: true,

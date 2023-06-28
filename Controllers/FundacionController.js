@@ -30,7 +30,7 @@ class FundacionController {
     getPorId = async (req, res) => {
       try {
         const { id } = req.params;
-        const result = await Fundacion.getTodas({
+        const result = await Fundacion.findAll({
           attributes: ["id", "nombre", "foto", "latitud","longitud","cbu","idcategoria"],
           where: {
             id,
@@ -72,7 +72,7 @@ class FundacionController {
         const { id } = req.params;
         const {nombre, foto, latitud,longitud,cbu,idcategoria} = req.body;
         const result = await Fundacion.update(
-          {nombre, foto, latitud,longitud,cbu },
+          {nombre, foto, latitud,longitud,cbu,idcategoria},
           {
             where: {
               id,
