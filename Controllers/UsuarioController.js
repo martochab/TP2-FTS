@@ -24,10 +24,6 @@ class UsuarioComtroller {
         result,
       });
     } catch (error) {
-      // res.status(400).send({
-      //   success: false,
-      //   message: error.message,
-      // });
       next(error);
     }
   };
